@@ -1,3 +1,5 @@
-venv
+venv/
 diabetes.csv
 diabetes-prediction.ipynb
+best_model_gradient_boosting.pkl
+scaler.pkl

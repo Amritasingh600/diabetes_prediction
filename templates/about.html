@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Diabetes Risk Predictor</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f8faf9;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 8px 25px rgba(46, 125, 50, 0.15);
+            overflow: hidden;
+            border: 1px solid #e8f5e8;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #2e7d32 0%, #388e3c 100%);
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .nav {
+            text-align: center;
+            padding: 20px;
+            background: #f1f8e9;
+            border-bottom: 1px solid #c8e6c9;
+        }
+
+        .nav a {
+            color: #2e7d32;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 600;
+            padding: 8px 16px;
+            border-radius: 20px;
+            transition: all 0.3s;
+        }
+
+        .nav a:hover {
+            background: #e8f5e8;
+            text-decoration: none;
+        }
+
+        .content {
+            padding: 40px;
+        }
+
+        .section {
+            margin-bottom: 40px;
+        }
+
+        .section h2 {
+            color: #2e7d32;
+            margin-bottom: 20px;
+            border-bottom: 3px solid #4caf50;
+            padding-bottom: 10px;
+        }
+
+        .section h3 {
+            color: #388e3c;
+            margin-bottom: 15px;
+            margin-top: 25px;
+        }
+
+        .section p, .section li {
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 10px;
+        }
+
+        .metrics-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+
+        .metrics-table th, .metrics-table td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .metrics-table th {
+            background: #f1f8e9;
+            font-weight: 600;
+            color: #2e7d32;
+        }
+
+        .metrics-table td {
+            color: #666;
+        }
+
+        .highlight {
+            background: linear-gradient(135deg, #2e7d32 0%, #388e3c 100%);
+            color: white;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+            box-shadow: 0 4px 15px rgba(46, 125, 50, 0.2);
+        }
+
+        .highlight h3 {
+            color: white;
+            margin-bottom: 15px;
+            margin-top: 0;
+        }
+
+        .highlight p, .highlight li {
+            color: white;
+            line-height: 1.6;
+            margin-bottom: 10px;
+        }
+
+        .highlight ul {
+            color: white;
+        }
+
+        .tech-stack {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin: 20px 0;
+        }
+
+        .tech-item {
+            background: #f1f8e9;
+            padding: 15px;
+            border-radius: 8px;
+            border-left: 4px solid #4caf50;
+            box-shadow: 0 2px 8px rgba(46, 125, 50, 0.1);
+        }
+
+        .tech-item strong {
+            color: #2e7d32;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>📊 About This Project</h1>
+            <p>Understanding diabetes risk prediction through machine learning</p>
+        </div>
+
+        <div class="nav">
+            <a href="/">Home</a>
+            <a href="/about">About</a>
+        </div>
+
+        <div class="content">
+            <div class="section">
+                <h2>🎯 Project Overview</h2>
+                <p>This diabetes risk prediction application uses machine learning to assess the likelihood of diabetes based on key health indicators. The model was trained on the Pima Indians Diabetes Dataset and employs a Gradient Boosting Classifier for accurate predictions.</p>
+                
+                <div class="highlight">
+                    <h3>🔬 Model Performance</h3>
+                    <p>Our Gradient Boosting model achieved excellent performance metrics, making it reliable for diabetes risk assessment.</p>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>📈 Model Metrics</h2>
+                <table class="metrics-table">
+                    <thead>
+                        <tr>
+                            <th>Metric</th>
+                            <th>Value</th>
+                            <th>Explanation</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Accuracy</td>
+                            <td>77.9%</td>
+                            <td>Overall correctness of predictions</td>
+                        </tr>
+                        <tr>
+                            <td>Precision</td>
+                            <td>73.3%</td>
+                            <td>Accuracy of positive diabetes predictions</td>
+                        </tr>
+                        <tr>
+                            <td>Recall</td>
+                            <td>84.8%</td>
+                            <td>Ability to identify actual diabetes cases</td>
+                        </tr>
+                        <tr>
+                            <td>F1-Score</td>
+                            <td>78.6%</td>
+                            <td>Balance between precision and recall</td>
+                        </tr>
+                        <tr>
+                            <td>ROC-AUC</td>
+                            <td>82.2%</td>
+                            <td>Model's discrimination ability</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="section">
+                <h2>🔍 Key Features</h2>
+                <p>The model analyzes eight important health indicators:</p>
+                <ul>
+                    <li><strong>Glucose Level:</strong> Most important predictor - blood sugar concentration</li>
+                    <li><strong>BMI:</strong> Body Mass Index indicating weight status</li>
+                    <li><strong>Age:</strong> Risk increases with age</li>
+                    <li><strong>Pregnancies:</strong> Number of pregnancies (for women)</li>
+                    <li><strong>Blood Pressure:</strong> Diastolic blood pressure measurement</li>
+                    <li><strong>Skin Thickness:</strong> Triceps skin fold thickness</li>
+                    <li><strong>Insulin:</strong> Serum insulin level</li>
+                    <li><strong>Diabetes Pedigree Function:</strong> Family history factor</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>⚡ Technology Stack</h2>
+                <div class="tech-stack">
+                    <div class="tech-item">
+                        <strong>Backend:</strong> Flask (Python)
+                    </div>
+                    <div class="tech-item">
+                        <strong>ML Model:</strong> Gradient Boosting Classifier
+                    </div>
+                    <div class="tech-item">
+                        <strong>Data Processing:</strong> Scikit-learn, Pandas
+                    </div>
+                    <div class="tech-item">
+                        <strong>Frontend:</strong> HTML5, CSS3, JavaScript
+                    </div>
+                    <div class="tech-item">
+                        <strong>Data Balancing:</strong> SMOTE
+                    </div>
+                    <div class="tech-item">
+                        <strong>Model Deployment:</strong> Joblib
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>🏥 Clinical Applications</h2>
+                <h3>Screening Tool</h3>
+                <p>This model can be used as a preliminary screening tool to identify individuals at high risk for diabetes, enabling early intervention and prevention strategies.</p>
+                
+                <h3>Risk Assessment</h3>
+                <p>Healthcare providers can use this tool to assess patient risk levels and recommend appropriate lifestyle modifications or further testing.</p>
+                
+                <h3>Health Awareness</h3>
+                <p>Individuals can gain insights into their diabetes risk factors and take proactive steps toward better health management.</p>
+            </div>
+
+            <div class="section">
+                <h2>⚠️ Important Disclaimers</h2>
+                <div class="highlight">
+                    <ul>
+                        <li>This tool is for educational and informational purposes only</li>
+                        <li>It should not replace professional medical advice</li>
+                        <li>Always consult healthcare providers for proper diagnosis</li>
+                        <li>Model predictions are based on historical data patterns</li>
+                        <li>Individual health conditions may vary significantly</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>👩‍💻 Developer Information</h2>
+                <p><strong>Developed by:</strong> Amrita Singh</p>
+                <p><strong>Education:</strong> B.Tech CSE (AIML) • 2nd Year</p>
+                <p><strong>Specialization:</strong> AI & Machine Learning</p>
+                <p><strong>Focus:</strong> Building intelligent, human-centered AI solutions for healthcare applications</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
